@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  ImageTrimmer
+//
+//  Created by uchiyama_Macmini on 2020/07/16.
+//  Copyright © 2020年 uchiyama_Macmini. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#include <opencv2/opencv.hpp>
+#import <Cocoa/Cocoa.h>
+#import <KZLibs.h>
+#import <KZImage/KZImage.h>
+#import "TRSettingObject.h"
+
+#define TYPE_TANKOU_HASUU @"単行本(最後が端数)"
+#define DOBU_CUR 3.0
+
+#define TRSet TRSettingObject.sharedSetting
+#endif /* PrefixHeader_pch */
